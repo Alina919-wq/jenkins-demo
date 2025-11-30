@@ -1,10 +1,7 @@
 pipeline {
     agent { label 'windows' }
 
-    tools {
-        maven 'Maven_3.9'   // имя Maven из Jenkins Global Tool Configuration
-        jdk 'JDK_11'        // имя JDK из Jenkins Global Tool Configuration
-    }
+
 
     stages {
         stage('Сборка') {
